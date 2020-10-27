@@ -1,0 +1,80 @@
+{
+  // Theme
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "GitHub Dark",
+
+  // Window Configuration (Electron)
+  "window.zoomLevel": 0,
+  
+  // Editor Configuration
+  "editor.tabSize": 2,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.suggestSelection": "first",
+  "editor.fontFamily": "Jetbrains Mono Medium",
+  "editor.fontLigatures": true,
+  
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": false,   // Use ESLint format on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  
+  "workbench.startupEditor": "readme",
+  "explorer.confirmDelete": false,
+  
+  // Terminal
+  "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+
+  // Files Config
+  "files.autoSave": "onFocusChange",
+  "files.autoSaveDelay": 500,
+  
+  // Git Config
+  "git.autoStash": true,
+  "git.enableCommitSigning": true,
+  "git.enableSmartCommit": true,
+
+  "git.inputValidationSubjectLength": 48,
+  "git.inputValidationLength": 0,
+
+  // ooooo                                                                                         
+  //  888          ooooooo   oo oooooo     oooooooo8 oooo  oooo   ooooooo     oooooooo8 ooooooooo8 
+  //  888          ooooo888   888   888  888    88o   888   888   ooooo888  888    88o 888oooooo8  
+  //  888      o 888    888   888   888   888oo888o   888   888 888    888   888oo888o 888         
+  // o888ooooo88  88ooo88 8o o888o o888o 888     888   888o88 8o 88ooo88 8o 888     888  88oooo888 
+  //                                      888ooo888                          888ooo888             
+  
+  // Javascript / Typescript
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Latex
+  "latex-workshop.message.error.show": false,
+
+  // Markdown ALl in One
+  "markdown.extension.list.indentationSize": "inherit",
+
+  // Python Config
+  "python.showStartPage": false,
+
+  //   ooooooooooo               o8                                     o88                         
+  //  888    88  oooo   oooo o888oo ooooooooo8 oo oooooo    oooooooo8 oooo   ooooooo  oo oooooo   
+  //  888ooo8      888o888    888  888oooooo8   888   888  888ooooooo  888 888     888 888   888  
+  //  888    oo    o88 88o    888  888          888   888          888 888 888     888 888   888  
+  // o888ooo8888 o88o   o88o   888o  88oooo888 o888o o888o 88oooooo88 o888o  88ooo88  o888o o888o 
+
+  // Discord Rich Presence
+  "discord.detailsEditing": "📝 {filename}",
+  "discord.detailsIdle": "💤",
+  "discord.lowerDetailsEditing": "📂 {workspace}",
+  "discord.lowerDetailsIdle": "{null}",
+  "discord.lowerDetailsNotFound": "{null}",
+  "discord.largeImage": "{lang}",
+  "discord.largeImageIdle": "prolly sleeping,,, am big tired boyo",
+  "discord.workspaceElapsedTime": true,
+
+  // ESLint
+  "eslint.format.enable": true,  
+
+  // Extension Store
+  "extensions.ignoreRecommendations": false
+}

@@ -1,0 +1,65 @@
+{
+  "displayName": "Angelo's Personal Setup",
+  "description": "Angelo's preferred VS Code settings wrapped in an extension pack",
+  
+  "name": "vscode-pack",
+  "version": "1.0.0",
+  "author": "Christopher Angelo<angelo@angeloanan.xyz>",
+  "publisher": "Angelo",
+  "repository": "https://github.com/angeloanan/vscode-pack.git",
+  "readme": "README.md",
+  "icon": "pack-icon.png",
+  "galleryBanner": {
+    "theme": "dark",
+    "color": "#7289DA"
+  },
+
+  "categories": [
+    "Extension Packs",
+    "Other"
+  ],
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+
+  "//": [
+    "Extension Pack Order:",
+    "* Language",
+    "* Syntax Highlighting",
+    "* Linters and Formatter",
+    "* Theme and Visual aspects",
+    "* Shortcuts Utilities",
+    "* Utilities"
+  ],
+  "extensionPack": [
+    "ms-python.python",
+    "ms-vscode.cpptools",
+    "bradlc.vscode-tailwindcss",
+    "yzhang.markdown-all-in-one",
+    "james-yu.latex-workshop",
+    
+    "toba.vsfire",
+    "prisma.prisma",
+    "mikestead.dotenv",
+    
+    "dbaeumer.vscode-eslint",
+    "amatiasq.sort-imports",
+    "heybourn.headwind",
+    "ph1p.zeit-co-vscode-schemas",
+    
+    "github.github-vscode-theme",
+    "pkief.material-icon-theme",
+    "usernamehw.errorlens",
+    "coenraads.bracket-pair-colorizer-2",
+
+    "artdiniz.quitcontrol-vscode",
+
+    "visualstudioexptteam.vscodeintellicode",
+    "icrawl.discord-vscode",
+    "pnp.polacode",
+    "bierner.markdown-footnotes",
+    "wakatime.vscode-wakatime"
+  ],
+
+  "license": "UNLICENSE"
+}

@@ -1,0 +1,11 @@
+.gitignore
+.vscode-test/**
+.vscode/**
+*.log
+node_modules
+
+# Java
+**/.classpath
+**/.project
+**/.settings
+**/.factorypat
