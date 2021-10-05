@@ -1,69 +1,90 @@
 {
   // Theme
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "GitHub Dark",
-
-  // Window Configuration (Electron)
-  "window.zoomLevel": 0,
-  
+  "workbench.colorTheme": "Nako",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": true,
+  "window.title": "${rootName}${separator}${activeFolderShort}/${activeEditorShort} ${dirty}",
   // Editor Configuration
+  "editor.fontSize": 12,
   "editor.tabSize": 2,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.suggestSelection": "first",
   "editor.fontFamily": "Jetbrains Mono Medium",
-  "editor.fontLigatures": true,
-  
-  "editor.minimap.enabled": false,
-  "editor.formatOnSave": false,   // Use ESLint format on save
+  "editor.fontLigatures": true, // Use ESLint format on save
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  
+  "editor.suggest.localityBonus": true,
+  "editor.lineNumbers": "relative",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.formatOnSave": true,
+  "editor.snippetSuggestions": "all",
+  "editor.tabCompletion": "on",
   "workbench.startupEditor": "readme",
   "explorer.confirmDelete": false,
-  
   // Terminal
-  "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
-
-  // Files Config
-  "files.autoSave": "onFocusChange",
-  "files.autoSaveDelay": 500,
-  
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "terminal.integrated.fontSize": 12,
   // Git Config
+  "git.enabled": true,
   "git.autoStash": true,
   "git.enableCommitSigning": true,
   "git.enableSmartCommit": true,
-
-  "git.inputValidationSubjectLength": 48,
-  "git.inputValidationLength": 0,
-
-  // ooooo                                                                                         
-  //  888          ooooooo   oo oooooo     oooooooo8 oooo  oooo   ooooooo     oooooooo8 ooooooooo8 
-  //  888          ooooo888   888   888  888    88o   888   888   ooooo888  888    88o 888oooooo8  
-  //  888      o 888    888   888   888   888oo888o   888   888 888    888   888oo888o 888         
-  // o888ooooo88  88ooo88 8o o888o o888o 888     888   888o88 8o 88ooo88 8o 888     888  88oooo888 
-  //                                      888ooo888                          888ooo888             
-  
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.inputValidationSubjectLength": null,
+  "git.inputValidationLength": 100000000000000,
+  // ooooo
+  //  888          ooooooo   oo oooooo     oooooooo8 oooo  oooo   ooooooo     oooooooo8 ooooooooo8
+  //  888          ooooo888   888   888  888    88o   888   888   ooooo888  888    88o 888oooooo8
+  //  888      o 888    888   888   888   888oo888o   888   888 888    888   888oo888o 888
+  // o888ooooo88  88ooo88 8o o888o o888o 888     888   888o88 8o 88ooo88 8o 888     888  88oooo888
+  //                                      888ooo888                          888ooo888
   // Javascript / Typescript
   "typescript.updateImportsOnFileMove.enabled": "always",
-
-  // Latex
-  "latex-workshop.message.error.show": false,
-
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
   // Markdown ALl in One
   "markdown.extension.list.indentationSize": "inherit",
-
-  // Python Config
-  "python.showStartPage": false,
-
-  //   ooooooooooo               o8                                     o88                         
-  //  888    88  oooo   oooo o888oo ooooooooo8 oo oooooo    oooooooo8 oooo   ooooooo  oo oooooo   
-  //  888ooo8      888o888    888  888oooooo8   888   888  888ooooooo  888 888     888 888   888  
-  //  888    oo    o88 88o    888  888          888   888          888 888 888     888 888   888  
-  // o888ooo8888 o88o   o88o   888o  88oooo888 o888o o888o 88oooooo88 o888o  88ooo88  o888o o888o 
-
+  "markdown.preview.fontFamily": "Inter,-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  // C / C++ Config
+  "C_Cpp.autocomplete": "Default",
+  "C_Cpp.clang_format_style": "Google",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[rs]": {
+    "editor.defaultFormatter": "matklad.rust-analyzer"
+  },
+  //   ooooooooooo               o8                                     o88
+  //  888    88  oooo   oooo o888oo ooooooooo8 oo oooooo    oooooooo8 oooo   ooooooo  oo oooooo
+  //  888ooo8      888o888    888  888oooooo8   888   888  888ooooooo  888 888     888 888   888
+  //  888    oo    o88 88o    888  888          888   888          888 888 888     888 888   888
+  // o888ooo8888 o88o   o88o   888o  88oooo888 o888o o888o 88oooooo88 o888o  88ooo88  o888o o888o
   // Discord Rich Presence
-  "discord.detailsEditing": "📝 {filename}",
+  "discord.detailsEditing": "📝 {file_name}",
   "discord.detailsIdle": "💤",
   "discord.lowerDetailsEditing": "📂 {workspace}",
   "discord.lowerDetailsIdle": "{null}",
@@ -71,10 +92,98 @@
   "discord.largeImage": "{lang}",
   "discord.largeImageIdle": "prolly sleeping,,, am big tired boyo",
   "discord.workspaceElapsedTime": true,
-
-  // ESLint
-  "eslint.format.enable": true,  
-
+  "eslint.lintTask.enable": true,
+  "eslint.packageManager": "yarn",
   // Extension Store
-  "extensions.ignoreRecommendations": false
+  // "extensions.ignoreRecommendations": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "editor.suggest.insertMode": "replace",
+  "editor.suggest.showStatusBar": true,
+  // Footsteps
+  "footsteps.highlightColor": "rgba(153, 128, 250)",
+  "footsteps.highlightColorMaxOpacity": 0.2,
+  // Tabnine
+  "tabnine.experimentalAutoImports": true,
+  // ---
+  "json.maxItemsComputed": 5000000,
+  "editor.maxTokenizationLineLength": 2000000,
+  "css.validate": false,
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "react": "html"
+  },
+  "vim.overrideCopy": false,
+  "editor.renderWhitespace": "all",
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": false
+  },
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "C_Cpp.default.cppStandard": "gnu++20",
+  "C_Cpp.default.cStandard": "gnu17",
+  "C_Cpp.clang_format_sortIncludes": true,
+  "errorLens.gutterIconSet": "defaultOutline",
+  "errorLens.statusBarColorsEnabled": true,
+  "errorLens.statusBarMessageEnabled": true,
+  "dashboard.projectData": null,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "remote.SSH.remotePlatform": {
+    "mc.angelo.fyi": "linux"
+  },
+
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+
+  "[dart]": {
+		// Automatically format code on save and during typing of certain characters
+		// (like `;` and `}`).
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+
+		// Draw a guide line at 80 characters, where Dart's formatting will wrap code.
+		"editor.rulers": [80],
+
+		// Disables built-in highlighting of words that match your selection. Without
+		// this, all instances of the selected text will be highlighted, interfering
+		// with Dart's ability to highlight only exact references to the selected variable.
+		"editor.selectionHighlight": false,
+
+		// By default, VS Code prevents code completion from popping open when in
+		// "snippet mode" (editing placeholders in inserted code). Setting this option
+		// to `false` stops that and allows completion to open as normal, as if you
+		// weren't in a snippet placeholder.
+		"editor.suggest.snippetsPreventQuickSuggestions": false,
+
+		// By default, VS Code will pre-select the most recently used item from code
+		// completion. This is usually not the most relevant item.
+		//
+		// "first" will always select top item
+		// "recentlyUsedByPrefix" will filter the recently used items based on the
+		//     text immediately preceding where completion was invoked.
+		"editor.suggestSelection": "first",
+
+		// Allows pressing <TAB> to complete snippets such as `for` even when the
+		// completion list is not visible.
+		"editor.tabCompletion": "onlySnippets",
+
+		// By default, VS Code will populate code completion with words found in the
+		// current file when a language service does not provide its own completions.
+		// This results in code completion suggesting words when editing comments and
+		// strings. This setting will prevent that.
+		"editor.wordBasedSuggestions": false,
+  },
+  "window.zoomLevel": 1
 }
